@@ -55,11 +55,13 @@ table {
 
 html {
 	font-size: 62.5%;
+	display: flex;
 }
 
 html, body {
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,13 +69,13 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 0.5em;
 	font-size: 1.6rem;
 	font-weight: 600;
+	display: flex;
     color: #781150;
 }
 
 h1 {
 	font-size: 7.2em;
 	font-weight: 500;
-	display: flex;
 	justify-content: space-evenly;
 	color: #EC4888;
   }
@@ -86,6 +88,7 @@ h2 {
 h3 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 2.4em;
+	font-weight: 700;
 	color: #EC4888;
 }
 
@@ -99,7 +102,6 @@ h6 {
 	font-weight: 600;
 	color: #781150;
 	padding-bottom: 1em;
-	display: flex;
 	justify-content: center;
 }
 p {
@@ -125,6 +127,7 @@ p {
 /* Body */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+/* Business Name */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 /*
 font-family: 'Playfair Display SC', serif;
@@ -142,7 +145,7 @@ nav ul, .contact li {
 	padding: 0;
 	overflow: hidden;
 }
-nav li, .contact li {
+nav li {
   text-align: center;
   float: left;
   margin: 0 8.25%;
@@ -153,14 +156,13 @@ nav a {
   color: #FF850F;
   font-weight: 700;
   font-size: 1.4em;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 1em;
   margin: 10px auto;
 }
 
-nav a:hover {
+nav a:hover, .contact a:hover {
   color: #EC4888;
   font-weight: 900;
 }
@@ -170,9 +172,29 @@ nav a:last-child {
 	justify-content: right;
 }
 
+.amber-text h2, .contact h2 {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 0;
+  }
+  
+.Amber img {
+margin: 2em auto 0;
+display: flex;
+border-radius: 50%;
+width: 35%;
+
+}
+
+.contact li {
+	justify-content: space-between;
+	float: left;
+	margin: 0 11%;
+  }
+
 .contact li a {
 	text-decoration: none;
-	color: #EC4888;
+	color: #FF850F;
 	font-weight: 800;
 	font-size: 1.6em;
 	display: flex;
@@ -181,25 +203,12 @@ nav a:last-child {
 	margin: 0 auto;
   }
 
-.amber-text h2 {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 0;
-}
-
-.Amber img {
-  margin: 2em auto 0;
-  display: flex;
-  border-radius: 50%;
-  width: 35%;
-  
-}
-
 .intro, .skills, .work-history, .contact {
 	text-align: left;
 	padding: 2% 10% 5%;
 	margin: 0 8.25%;
   }
+
 
 footer {
 	padding-top: 4em;
