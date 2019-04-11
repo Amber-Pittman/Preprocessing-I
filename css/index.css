@@ -222,7 +222,7 @@ p {
   margin: 1% 10% 3%;
 }
 .first-para::first-letter {
-  font-family: Playfair Display;
+  font-family: Playfair Display SC;
   font-size: 250%;
   font-weight: 700;
   color: #FF850F;
@@ -246,6 +246,7 @@ nav li {
 nav a {
   text-decoration: none;
   color: #FF850F;
+  font-family: Montserrat;
   font-weight: 700;
   font-size: 1.4em;
   flex-wrap: wrap;
@@ -282,6 +283,7 @@ nav a:last-child {
 .contact li a {
   text-decoration: none;
   color: #FF850F;
+  font-family: Montserrat;
   font-weight: 800;
   font-size: 1.6em;
   display: flex;
