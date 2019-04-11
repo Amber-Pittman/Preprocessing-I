@@ -187,11 +187,11 @@ h5 {
   color: #781150;
 }
 h1 {
+  font-variant: small-caps;
   font-size: 7.2em;
   font-weight: 500;
   justify-content: space-evenly;
   color: #EC4888;
-  font: Playfair Display SC;
 }
 h2 {
   font-size: 3.6em;
@@ -222,7 +222,7 @@ p {
   margin: 1% 10% 3%;
 }
 .first-para::first-letter {
-  font-family: Playfair Display SC;
+  font-family: Playfair Display;
   font-size: 250%;
   font-weight: 700;
   color: #FF850F;
@@ -268,6 +268,7 @@ nav a:last-child {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 0;
+  font-variant: small-caps;
 }
 .Amber img {
   margin: 2em auto 0;
@@ -276,9 +277,9 @@ nav a:last-child {
   width: 35%;
 }
 .contact li {
-  justify-content: space-between;
+  justify-content: space-evenly;
   float: left;
-  margin: 0 10%;
+  margin: 1.2% 12%;
 }
 .contact li a {
   text-decoration: none;
