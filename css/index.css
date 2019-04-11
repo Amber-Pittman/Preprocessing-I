@@ -1,11 +1,4 @@
 /* Fonts */
-/* H1 */
-@font-face {
-  font-family: 'Playfair Display SC';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display SC Regular'), local('PlayfairDisplaySC-Regular'), url(https://fonts.gstatic.com/s/playfairdisplaysc/v8/ke85OhoaMkR6-hSn7kbHVoFf7ZfgMPr_lbkMFQ.ttf) format('truetype');
-}
 /* Headers */
 @font-face {
   font-family: 'Playfair Display';
@@ -27,12 +20,6 @@
   font-weight: 400;
   src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
 }
-/*
-font-family: 'Playfair Display SC', serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -228,6 +215,7 @@ p {
   color: #FF850F;
   margin: 0 0 0 1em;
 }
+/* Add phone and tablet stuff below */
 .container {
   width: 100%;
   background-color: #F1F1F1;
