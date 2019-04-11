@@ -180,10 +180,30 @@ h1 {
   justify-content: space-evenly;
   color: #EC4888;
 }
+@media ( max-width: 800px ) {
+  h1 {
+    font-size: 6em;
+  }
+}
+@media ( max-width: 500px ) {
+  h1 {
+    font-size: 4.8em;
+  }
+}
 h2 {
   font-size: 3.6em;
   font-weight: 600;
   margin: 0 10% 4%;
+}
+@media ( max-width: 800px ) {
+  h2 {
+    font-size: 2.8em;
+  }
+}
+@media ( max-width: 500px ) {
+  h2 {
+    font-size: 2em;
+  }
 }
 h3 {
   font-family: Raleway;
@@ -192,17 +212,47 @@ h3 {
   margin: 0 10% 1%;
   color: #EC4888;
 }
+@media ( max-width: 800px ) {
+  h3 {
+    font-size: 2em;
+  }
+}
+@media ( max-width: 500px ) {
+  h3 {
+    font-size: 1.6em;
+  }
+}
 h4 {
   font-size: 1.8em;
   color: #FF850F;
   margin: 0 10% 2%;
 }
+@media ( max-width: 800px ) {
+  h4 {
+    font-size: 1.6em;
+  }
+}
+@media ( max-width: 500px ) {
+  h4 {
+    font-size: 1.4em;
+  }
+}
 h6 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 600;
   color: #781150;
   padding-bottom: 1em;
   justify-content: center;
+}
+@media ( max-width: 800px ) {
+  h6 {
+    font-size: 1.2em;
+  }
+}
+@media ( max-width: 500px ) {
+  h6 {
+    font-size: 1em;
+  }
 }
 p {
   font-size: 1.6rem;
@@ -215,7 +265,6 @@ p {
   color: #FF850F;
   margin: 0 0 0 1em;
 }
-/* Add phone and tablet stuff below */
 .container {
   width: 100%;
   background-color: #F1F1F1;
@@ -225,6 +274,7 @@ nav ul,
   margin: 0;
   padding: 0;
   overflow: hidden;
+  vertical-align: top;
 }
 nav li {
   text-align: center;
@@ -241,6 +291,16 @@ nav a {
   justify-content: space-evenly;
   padding: 1em;
   margin: 10px auto;
+}
+@media ( max-width: 800px ) {
+  nav a {
+    font-size: 1.3em;
+  }
+}
+@media ( max-width: 500px ) {
+  nav a {
+    font-size: 1.2em;
+  }
 }
 nav a:hover,
 .contact a:hover {
