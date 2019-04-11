@@ -1,4 +1,32 @@
-// Is this working?
+@primary-color: #781150;
+@secondary-color: #EC4888;
+@tertiary-color: #FF850F;
+@last-color: #F1F1F1;
+
+@h1-font: Playfair Display SC;
+@header-font: Playfair Display;
+@primary-font: Montserrat;
+@last-font: Raleway;
+
+/* Fonts */
+/* H1 */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+
+/* Headers */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* Body */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Business Name */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*
+font-family: 'Playfair Display SC', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -60,24 +88,25 @@ html {
 
 html, body {
     height: 100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: @primary-font;
 
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Playfair Display', serif;
+    font-family: @header-font;
     margin-bottom: 0.5em;
 	font-size: 1.6rem;
 	font-weight: 600;
 	display: flex;
-    color: #781150;
+    color: @primary-color;
 }
 
 h1 {
 	font-size: 7.2em;
 	font-weight: 500;
 	justify-content: space-evenly;
-	color: #EC4888;
+	color: @secondary-color;
+	font: @h1-font;
   }
 
 h2 {
@@ -87,23 +116,23 @@ h2 {
   }
 
 h3 {
-	font-family: 'Raleway', sans-serif;
+	font-family: @last-font;
 	font-size: 2.4em;
 	font-weight: 700;
 	margin: 0 10% 1%;
-	color: #EC4888;
+	color: @secondary-color;
 }
 
 h4 {
 	font-size: 1.8em;
-	color: #FF850F;
+	color: @tertiary-color;
 	margin: 0 10% 2%;
 }
 
 h6 {
 	font-size: 1.2em;
 	font-weight: 600;
-	color: #781150;
+	color: @primary-color;
 	padding-bottom: 1em;
 	justify-content: center;
 }
@@ -113,35 +142,16 @@ p {
 }
 
 .first-para::first-letter {
-  font-family: 'Playfair Display', serif;
+  font-family: @header-font;
   font-size: 250%;
   font-weight: 700;
-  color: #FF850F;
+  color: @tertiary-color;
   margin: 0 0 0 1em;
 }
 
-/* Fonts */
-/* H1 */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
-
-/* Headers */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-
-/* Body */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-/* Business Name */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-/*
-font-family: 'Playfair Display SC', serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
-*/
-
 .container {
   width: 100%;
-  background-color: #F1F1F1;
+  background-color: @last-color;
 }
 nav ul, .contact li {
 	margin: 0;
@@ -156,7 +166,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #FF850F;
+  color: @tertiary-color;
   font-weight: 700;
   font-size: 1.4em;
   flex-wrap: wrap;
@@ -166,7 +176,7 @@ nav a {
 }
 
 nav a:hover, .contact a:hover {
-  color: #EC4888;
+  color: @secondary-color;
   font-weight: 900;
 }
 
@@ -197,7 +207,7 @@ width: 35%;
 
 .contact li a {
 	text-decoration: none;
-	color: #FF850F;
+	color: @tertiary-color;
 	font-weight: 800;
 	font-size: 1.6em;
 	display: flex;

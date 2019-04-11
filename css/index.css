@@ -1,3 +1,38 @@
+/* Fonts */
+/* H1 */
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display SC Regular'), local('PlayfairDisplaySC-Regular'), url(https://fonts.gstatic.com/s/playfairdisplaysc/v8/ke85OhoaMkR6-hSn7kbHVoFf7ZfgMPr_lbkMFQ.ttf) format('truetype');
+}
+/* Headers */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
+}
+/* Body */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+/* Business Name */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+/*
+font-family: 'Playfair Display SC', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,14 +172,14 @@ html {
 html,
 body {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Playfair Display', serif;
+  font-family: Playfair Display;
   margin-bottom: 0.5em;
   font-size: 1.6rem;
   font-weight: 600;
@@ -156,6 +191,7 @@ h1 {
   font-weight: 500;
   justify-content: space-evenly;
   color: #EC4888;
+  font: Playfair Display SC;
 }
 h2 {
   font-size: 3.6em;
@@ -163,7 +199,7 @@ h2 {
   margin: 0 10% 4%;
 }
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway;
   font-size: 2.4em;
   font-weight: 700;
   margin: 0 10% 1%;
@@ -186,47 +222,12 @@ p {
   margin: 1% 10% 3%;
 }
 .first-para::first-letter {
-  font-family: 'Playfair Display', serif;
+  font-family: Playfair Display;
   font-size: 250%;
   font-weight: 700;
   color: #FF850F;
   margin: 0 0 0 1em;
 }
-/* Fonts */
-/* H1 */
-@font-face {
-  font-family: 'Playfair Display SC';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display SC Regular'), local('PlayfairDisplaySC-Regular'), url(https://fonts.gstatic.com/s/playfairdisplaysc/v8/ke85OhoaMkR6-hSn7kbHVoFf7ZfgMPr_lbkMFQ.ttf) format('truetype');
-}
-/* Headers */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYhQ.ttf) format('truetype');
-}
-/* Body */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
-}
-/* Business Name */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v13/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
-/*
-font-family: 'Playfair Display SC', serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
-*/
 .container {
   width: 100%;
   background-color: #F1F1F1;
