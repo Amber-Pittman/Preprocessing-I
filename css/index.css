@@ -230,11 +230,15 @@ h4 {
 @media ( max-width: 800px ) {
   h4 {
     font-size: 1.6em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
   }
 }
 @media ( max-width: 500px ) {
   h4 {
     font-size: 1.4em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
   }
 }
 h6 {
@@ -324,10 +328,38 @@ nav a:last-child {
   border-radius: 50%;
   width: 35%;
 }
+@media ( max-width: 800px ) {
+  .Amber img {
+    width: 40%;
+  }
+}
+@media ( max-width: 500px ) {
+  .Amber img {
+    width: 50%;
+  }
+}
+.contact ul {
+  width: 28%;
+  padding: 0;
+  margin: 1.5% 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media ( max-width: 800px ) {
+  .contact ul {
+    width: 60%;
+    margin: 2% 20%;
+  }
+}
+@media ( max-width: 500px ) {
+  .contact ul {
+    width: 50%;
+    margin: 2% 23%;
+  }
+}
 .contact li {
   justify-content: space-evenly;
   float: left;
-  margin: 1.2% 12%;
 }
 .contact li a {
   text-decoration: none;
@@ -338,12 +370,10 @@ nav a:last-child {
   display: flex;
   flex-direction: column;
   padding: 1em;
-  margin: 0 10%;
 }
 .intro,
 .skills,
-.work-history,
-.contact {
+.work-history {
   text-align: left;
   padding: 0 1% 5%;
   margin: 0 10%;
