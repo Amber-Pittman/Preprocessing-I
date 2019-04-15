@@ -1,4 +1,40 @@
-// Is this working?
+@primary-color: #781150;
+@secondary-color: #EC4888;
+@tertiary-color: #FF850F;
+@last-color: #F1F1F1;
+
+@font1: Playfair Display;
+@font2: Montserrat;
+@font3: Raleway;
+
+@phone: ~'( max-width: 500px )';
+@tablet: ~"( max-width: 800px )";
+
+/* Fonts */
+
+/* Headers */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* Body */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Business Name */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+/* Mixins */
+
+.special-h2 {
+	justify-content: space-evenly;
+	margin-bottom: 0;
+	font-variant: small-caps;
+}
+
+.content-align {
+	text-align: left;
+	padding: 0 1% 5%;
+	margin: 0 10%;
+  }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -30,7 +66,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.25;
 }
 ol, ul {
 	list-style: none;
@@ -53,7 +89,246 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html {
+	font-size: 62.5%;
+	display: flex;
 }
 
+html, body {
+    height: 100%;
+	font-family: @font2;
+
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: @font1;
+    margin-bottom: 0.5em;
+	font-size: 1.6rem;
+	font-weight: 600;
+	display: flex;
+    color: @primary-color;
+}
+
+h1 {
+	font-variant: small-caps;
+	font-size: 7.2em;
+	font-weight: 500;
+	justify-content: space-evenly;
+	color: @secondary-color;
+	
+	@media @tablet {
+		font-size: 6em;
+	}
+
+	@media @phone {
+		font-size: 4.8em;
+	}
+  }
+
+h2 {
+	font-size: 3.6em;
+	font-weight: 600;
+	margin: 0 10% 4%;
+
+	@media @tablet {
+		font-size: 2.8em;
+	}
+
+	@media @phone {
+		font-size: 2em;
+	}
+  }
+
+h3 {
+	font-family: @font3;
+	font-size: 2.4em;
+	font-weight: 700;
+	margin: 0 10% 1%;
+	color: @secondary-color;
+
+	@media @tablet {
+		font-size: 2em;
+	}
+
+	@media @phone {
+		font-size: 1.6em;
+	}
+}
+
+h4 {
+	font-size: 1.8em;
+	color: @tertiary-color;
+	margin: 0 10% 2%;
+
+	@media @tablet {
+		font-size: 1.6em;
+		margin-top: 0.5em;
+		margin-bottom: 1em;
+	}
+
+	@media @phone {
+		font-size: 1.4em;
+		margin-top: 0.5em;
+		margin-bottom: 1em;
+	}
+}
+
+h6 {
+	font-size: 1.3em;
+	font-weight: 600;
+	color: @primary-color;
+	padding-bottom: 1em;
+	justify-content: center;
+
+	@media @tablet {
+		font-size: 1.2em;
+	}
+
+	@media @phone {
+		font-size: 1em;
+	}
+}
+p {
+    font-size: 1.6rem;
+    margin: 1% 10% 3%;
+}
+
+.first-para::first-letter {
+  font-family: @font1;
+  font-size: 250%;
+  font-weight: 700;
+  color: @tertiary-color;
+  margin: 0 0 0 1em;
+}
+
+.container {
+  width: 100%;
+  background-color: @last-color;
+}
+
+nav ul {
+	width: 75%;
+	margin: 0 12%;
+	display: flex;
+	justify-content: space-evenly;
+
+	@media @tablet {
+		width: 85%;
+		margin: 0 10%;
+	}
+
+	@media @phone {
+		width: 90%;
+		margin: 0 6% 1%;
+	}
+}
+
+nav li {
+  text-align: center;
+  margin: 0 7%;
+}
+
+nav a {
+  text-decoration: none;
+  color: @tertiary-color;
+  font-family: @font2;
+  font-weight: 700;
+  font-size: 1.4em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px auto;
+
+	@media @tablet {
+		font-size: 1.3em;
+	}
+
+	@media @phone {
+		font-size: 1.2em;
+	}
+}
+
+nav a:hover, .contact a:hover {
+  color: @secondary-color;
+  font-weight: 900;
+}
+
+nav a:last-child {
+	display: flex;
+	justify-content: right;
+}
+
+.amber-text h2 {
+	.special-h2;
+}
+  
+.Amber img {
+	margin: 2em auto 0;
+	display: flex;
+	border-radius: 50%;
+	width: 35%;
+
+	@media @tablet {
+		width: 40%;
+	}
+
+	@media @phone {
+		width: 50%;
+	}
+}
+
+.intro {
+	.content-align;
+}
+
+.skills {
+	.content-align;
+}
+
+.work-history {
+	.content-align;
+}
+
+.contact h2 {
+	.special-h2;
+}
+
+.contact ul {
+	width: 30%;
+	padding: 0;
+	margin: 1.5% 35%;
+	display: flex;
+	justify-content: space-evenly;
+
+	@media @tablet {
+		width: 60%;
+		margin: 2% 20%;
+	}
+
+	@media @phone {
+		width: 50%;
+		margin: 2% 23%;
+	}
+}
+.contact li {
+	justify-content: space-evenly;
+	float: left;
+  }
+
+.contact li a {
+	text-decoration: none;
+	color: @tertiary-color;
+	font-family: @font2;
+	font-weight: 800;
+	font-size: 1.6em;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+  }
+
+
+footer {
+	padding-top: 4em;
+	padding-bottom: 1em;
+	margin: 0 10%;
+	text-align: center;
+}
